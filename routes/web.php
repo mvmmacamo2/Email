@@ -15,7 +15,10 @@ Route::get('/', function () {
 	return view('welcome');
 });
 
-Route::post('sendmail', function(\Illuminate\Http\Request $request){
+Route::post('/sendmail', function(\Illuminate\Http\Request $request, \Illuminate\Mail\Mailer $mailer){
 
+	$mailer
+	->to($request->input('email'))
+	->send(new \App\Mail\MyMail($request->input('title')));
 	return redirect()->back();
 })->name('sendmail');

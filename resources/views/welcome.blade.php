@@ -10,7 +10,8 @@
 
     <div class="flex-center position-ref full-height">
 
-        <form action="{{route('sendmail')}}" method="get" accept-charset="utf-8">
+        <form action="{{route('sendmail')}}" method="post" accept-charset="utf-8">
+            {!! csrf_field() !!}
 
             <input type="email" name="email">
             <input type="text" name="title">

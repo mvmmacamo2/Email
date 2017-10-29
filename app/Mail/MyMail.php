@@ -20,8 +20,8 @@ class MyMail extends Mailable
      */
     public function __construct($title)
     {
-     $this->title=$title
- }
+        $this->title=$title;
+    }
 
     /**
      * Build the message.
