@@ -30,7 +30,7 @@ class MyMail extends Mailable
      */
     public function build()
     {
-        return $this->from('museunacionaldamoeda@gmail.com')
+        return $this->from('misaelvasco@gmail.com')
         ->view('email.mymail');
     }
 }
