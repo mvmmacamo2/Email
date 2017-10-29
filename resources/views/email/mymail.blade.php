@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Laravel Emali</title>
+    <title>My Mail</title>
     <meta name="author" content="Miguel Vasco Macamo">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 </head>
 <body>
 
     <div class="flex-center position-ref full-height">
 
-        <form action="{{route('sendmail')}}" method="get" accept-charset="utf-8">
+      <h1>You got Mail</h1>
+      <p>{{ $title}}</p>
 
-            <input type="email" name="email">
-            <input type="text" name="title">
-            <button type="submit">Send me a Mail</button>
-
-        </form>
-
-    </div>
+  </div>
 
 </body>
 </html>

@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
+
+Route::post('sendmail', function(\Illuminate\Http\Request $request){
+
+	return redirect()->back();
+})->name('sendmail');
